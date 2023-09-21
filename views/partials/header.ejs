@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.2/css/all.css">
+  <link rel="stylesheet" href="/styles/layout.css">
+  <link rel="stylesheet" href="/styles/content.css">
+  <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
+  
+  
+  <title>Beemona</title>
+</head>
+<header>
+  <nav class="navbar navbar-expand-lg navbar-mainbg">
+    <img class="navbar-bee" src="/images/Untitled-12.png"><a class="navbar-brand navbar-logo" href="/">Beemona</a>
+
+  
+    <button onclick="myFunction()" class="navbar-toggler">
+     <i class="fas fa-bars text-white"></i>
+    
+
+    <li class="nav-dropdown">
+      <a class="nav-link "href="/services">Services</a> 
+    </li>
+    <li class="nav-dropdown">
+      <a class="nav-link" href="/about">About</a>
+    </li>
+    <li class="nav-dropdown">
+      <a class="nav-link" href="/contact">Contact</a>
+    </li>
+</button>
+
+    
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav ml-auto">
+        <div class="hori-selector">
+          <div class="left">
+
+          </div>
+        </div>
+
+        <li class="nav-item">
+          <a class="nav-link" href="/"></i>Home</a>
+        </li>
+
+        <li>
+          <a class="nav-link "href="/services"><i class="far fa-copy"></i>Services</a> 
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/about"><i class="far fa-clone"></i>About</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/contact"><i class="far fa-calendar-alt"></i>Contact</a>
+        </li>
+       
+          
+      </ul>
+    </div>
+  </nav>
+</header>
+<main class="container">
+
+
+<script>
+function myFunction() {
+  document.getElementById("myDropdown").classList.toggle("show");
+}
+
+// Close the dropdown menu if the user clicks outside of it
+window.onclick = function(event) {
+  if (!event.target.matches('.dropbtn')) {
+    var dropdowns = document.getElementsByClassName("dropdown-content");
+    var i;
+    for (i = 0; i < dropdowns.length; i++) {
+      var openDropdown = dropdowns[i];
+      if (openDropdown.classList.contains('show')) {
+        openDropdown.classList.remove('show');
+      }
+    }
+  }
+} 
+</script>

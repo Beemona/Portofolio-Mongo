@@ -1,0 +1,98 @@
+<%- include("partials/header.ejs") %>
+
+
+
+ <div class ="ai-photos">   
+<img class="ai1" src="images/ai.jpg" alt="AI Art">
+<img class="ai2" src="images/ai2.png" alt="AI Art">
+<img class="ai3" src="images/ai3.jpg" alt="AI Art"></div>
+
+   <h2 class="title-category1">Artificial Intelligence Art </h2>  
+   <p class="container2">
+    Made with Stable Diffusion (left and right images) and MidJourney (middle image). <br>
+    <br> Styles: Cartoon and Anime 
+   <br> Working with different models, LORAs and Lycoris
+   <br> Providing a sample image to the clients and customizing based on their preferences.
+   
+</p>
+
+
+
+
+<img class="carousel-webdev" src="images/Capture5.PNG" alt="Capture of the Home Page of TinDog Website">
+<img class="carousel-webdev" src="images/Capture6.PNG" alt="Capture of the Home Page of TinDog Website">
+<img class="carousel-webdev" src="images/Capture7.PNG" alt="Capture of the Home Page of TinDog Website">
+<h2 class="title-category2">Web Development</h2>  
+
+<p class="container2">
+
+    Full Stack Development - Front End Development preferred. 
+    <br>
+    <br> Front End Development: React, BootStrap, Learning PHP and Wordpress
+    <br> Back End Development: Node.js, ESJ, MongoDB, Mongoose, API
+    <br> One Page and Multi-Page Websites 
+    <br>
+    <br> My Projects are uploaded on <a href="https://github.com/Beemona">GitHub</a> (for now). The above project: <a href="https://honeytasks.cyclic.cloud/">Honey Tasks</a>.
+   
+
+</p>
+
+
+
+
+<img class="carousel-webdesign" src="images/1.png" alt="Home Page">
+<img class="carousel-webdesign" src="images/2.png" alt="Browsing Items Page">
+<img class="carousel-webdesign" src="images/3.png" alt="Buy Product Page">
+<h2 class="title-category3">Web Design</h2>  
+<p class="container2">
+    User Interface (UI) and User Experience (UX) <br>
+    <br> Working with Figma and Canva
+    <br> Above you can see a design I created for a Plant Shop named "Leafing" 
+    <br>
+
+</p>
+
+
+<img class="image-graphicdesign" src="images/donuts.png" alt="Donut">
+<h2 class="title-category4">Graphic Design</h2>  
+<p class="container2" style="padding-bottom: 10%;">
+    Logo, Banners, Promotional Materials <br>
+   <br> Working with Adobe Illustrator and Photoshop
+   <br> Digital Marketing Experience with Google and Facebook Ads
+
+
+</p>
+
+  <script>
+    var slideIndex = 0;
+    carousel();
+    var slideIndexs = 0;
+    carouselWeb();
+
+
+function carousel() {
+  var i;
+  var x = document.getElementsByClassName("carousel-webdesign");
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";
+  }
+  slideIndex++;
+  if (slideIndex > x.length) {slideIndex = 1}
+  x[slideIndex-1].style.display = "block";
+  setTimeout(carousel, 2000); 
+}
+
+function carouselWeb() {
+  var i;
+  var y = document.getElementsByClassName("carousel-webdev");
+  for (i = 0; i < y.length; i++) {
+    y[i].style.display = "none";
+  }
+  slideIndexs++;
+  if (slideIndexs > y.length) {slideIndexs = 1}
+  y[slideIndexs-1].style.display = "block";
+  setTimeout(carouselWeb, 2000); 
+}
+  </script>
+ 
+  <%- include("partials/footer.ejs") %>

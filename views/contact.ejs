@@ -1,0 +1,18 @@
+<%- include("partials/header.ejs") %>
+
+
+<h1>Contact</h1>
+<p>
+  You can find me on <a href="https://github.com/Beemona">Github</a> and <a href="https://www.linkedin.com/in/simona-calota/">LinkedIn</a>. Also, you can message me directly through the following form:
+</p>
+<form class="form" action="/contact" method="post">
+  <input name="name" type="text" class="feedback-input" placeholder="Name" required />
+  <input name="email" type="email" class="feedback-input" placeholder="Email" required />
+  <textarea name="message" class="feedback-input" placeholder="Write your message here..." required></textarea>
+  <input type="submit" value="Submit" />
+</form>
+
+
+
+
+<%- include("partials/footer.ejs") %>
